@@ -9,7 +9,7 @@ register_nav_menus(
 add_filter(
 	'timber_context', function ( $data ) {
 		$data['menus'] = array(
-			'primary_navigation' => new TimberMenu( 'primary_navigation' ),
+			'primary_navigation' => new \Timber\Menu( 'primary_navigation' ),
 		);
 
 		return $data;
